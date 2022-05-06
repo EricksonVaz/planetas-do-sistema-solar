@@ -1,0 +1,111 @@
+.dropdown-info-planet{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: -300px;
+    padding: 8rem 1rem 2rem 1rem;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(29, 4, 34, 0.873);
+    bottom: 0;
+    width: 280px;
+    transition: right .3s linear;
+}
+.dropdown-info-planet.open{
+    right: 0;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.img-planet{
+    width: 200px;
+    height: 200px;
+}
+.dropdown-info-planet .name-planet{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.more-info-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.btn-dropdown{
+    font-size: 1.4rem;
+    padding: .5rem;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.arrow-dropdown{
+    margin-top: 1rem;
+    border-top: 9px solid white;
+    border-left: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
+.dropdown-info-container{
+    padding: 1rem;
+    font-size: 1.4rem;
+    max-height: 110px;
+    overflow-y: auto;
+}
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+.form-group>*{
+    flex-grow: 1;
+}
+.form-group input{
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid gray;
+}
+.input-result{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.dropdown-info-container:nth-of-type(2){
+    max-height: 200px;
+}
+.dropdown-info-container.hide{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.form-group input {
+    outline: none;
+}
+.btn-get-result{
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.363);
+    min-height: 38px;
+    border: 1px solid gray;
+}
+@media all and (max-width:310px) {
+    .dropdown-info-planet {
+        width: 100%;
+    }
+    .img-planet{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+.main-header{
+    position: relative;
+    z-index: 2;
+    max-width: 1140px;
+    margin: 3rem auto;
+    background-color: rgba(0, 0, 0, 0.479);
+    border: 1px solid gray;
+    padding: 2rem;
+    font-size: 1.9rem;
+    text-align: center;
+}
+@media all and (max-width:1200px) {
+    .main-header {
+        max-width: 95%;
+    }
+    .btn-group{
+        text-align: center;
+    }
+    .btn{
+        margin-bottom: .5rem;
+    }
+}
+@media all and (max-width:885px) {
+    .main-header {
+        font-size: 1.5rem;
+    }
+}

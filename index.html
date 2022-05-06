@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="./">
+    <title>Planetas do Sistema Solar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <h1>Conheça os planetas do sistema solar</h1>
+    </header>
+    <aside class="dropdown-info-planet">
+        <span class="close">&times;</span>
+        <img src="" class="img-planet" alt="loading...">
+        <span class="name-planet"></span>
+        <div class="more-info-container">
+            <span class="btn-dropdown" data-toggle-collapse="info-detail">
+                <span class="label-dropdown" data-toggle-collapse="info-detail">Detalhes do Planeta</span>
+                <div class="arrow-dropdown" data-toggle-collapse="info-detail"></div>
+            </span>
+            <div class="dropdown-info-container list" style="display: none;" data-collapse="info-detail">
+                
+            </div>
+            <span class="btn-dropdown" data-toggle-collapse="calculate">
+                <span class="label-dropdown" data-toggle-collapse="calculate">Calcular meu peso neste planeta</span>
+                <div class="arrow-dropdown" data-toggle-collapse="calculate"></div>
+            </span>
+            <div class="dropdown-info-container calc" style="display: none;" data-collapse="calculate">
+                <div class="form-group">
+                    <input type="number" min="0" step="0.01" class="form-control" data-fatmult="" id="my-peso-input" placeholder="seu pesso na terra">
+                    <button type="button" class="btn-get-result">Calcular</button>
+                    <div class="input-result">
+                        <span class="label-result">Result:</span>
+                        <span class="count-result"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main-container" role="main">
+        <section class="filter-container">
+            <div class="btn-group">
+                <button type="button" class="btn active" data-filter="all">Todos</button>
+                <button type="button" class="btn" data-filter="rochoso">Planetas Rochosos</button>
+                <button type="button" class="btn" data-filter="gasoso">Planetas Gasosos</button>
+            </div>
+            <input type="text" id="input-filter" placeholder="flitrar planeta">
+        </section>
+        <section class="list-planets-container">
+            <div class="card-planet shimmer">
+                <div class="planet-img"></div>
+                <span class="planet-name"></span>
+                <button type="button" class="btn-action-planet"></button>
+                <button type="button" class="btn-action-planet"></button>
+            </div>
+            <div class="card-planet shimmer">
+                <div class="planet-img"></div>
+                <span class="planet-name"></span>
+                <button type="button" class="btn-action-planet"></button>
+                <button type="button" class="btn-action-planet"></button>
+            </div>
+            <div class="card-planet shimmer">
+                <div class="planet-img"></div>
+                <span class="planet-name"></span>
+                <button type="button" class="btn-action-planet"></button>
+                <button type="button" class="btn-action-planet"></button>
+            </div>
+            <div class="card-planet shimmer">
+                <div class="planet-img"></div>
+                <span class="planet-name"></span>
+                <button type="button" class="btn-action-planet"></button>
+                <button type="button" class="btn-action-planet"></button>
+            </div>
+            <div class="card-planet d-none" data-id="1">
+                <img src="/img/marte.png" class="planet-img" alt="">
+                <span class="planet-name">Nome do planeta</span>
+                <button type="button" class="btn-action-planet atmos">Atmosfera</button>
+                <button type="button" class="btn-action-planet more">Saber Mais</button>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer" role="contentinfo">
+        &copy; Erickson Vaz, 2022
+    </footer>
+    <div class="backdrop-modal"></div>
+    <div class="modal-atmosfera">
+        <div class="modal-header">
+            <h2 class="modal-title">Atmosfera de: <span class="planet-name">Marte</span></h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem dolores esse asperiores nihil voluptates, saepe velit magnam voluptatibus dicta quis earum provident distinctio, odit et a facere obcaecati deleniti, perferendis maiores exercitationem? Numquam voluptas officiis voluptates nam vel cumque ut odio esse aspernatur voluptatibus delectus voluptatem, nulla, ab quos?</p>
+        </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

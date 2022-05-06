@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: white;
+    background-image: url("/img/main-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body::after{
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: 1;
+    background-image: linear-gradient(to top right,rgba(11, 11, 11, 0.785),rgba(63, 14, 81, 0.467));
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+button{
+    cursor: pointer;
+}
+.d-none{
+    display: none!important;
+}
