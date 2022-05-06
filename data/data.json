@@ -2,7 +2,7 @@
     {
         "id":1,
         "nome":"Mercurio",
-        "img":"/img/mercurio.png",
+        "img":"img/mercurio.png",
         "tipo":"rochoso",
         "temp_media":179,
         "temp_max":427,
@@ -21,7 +21,7 @@
     {
         "id":2,
         "nome":"Venus",
-        "img":"/img/venus.png",
+        "img":"img/venus.png",
         "tipo":"rochoso",
         "temp_media":461,
         "temp_max":482,
@@ -40,7 +40,7 @@
     {
         "id":3,
         "nome":"Terra",
-        "img":"/img/terra.png",
+        "img":"img/terra.png",
         "tipo":"rochoso",
         "temp_media":14,
         "temp_max":57.8,
@@ -59,7 +59,7 @@
     {
         "id":4,
         "nome":"Marte",
-        "img":"/img/marte.png",
+        "img":"img/marte.png",
         "tipo":"rochoso",
         "temp_media":-63,
         "temp_max":35,
@@ -78,7 +78,7 @@
     {
         "id":5,
         "nome":"Júpiter",
-        "img":"/img/jupiter.png",
+        "img":"img/jupiter.png",
         "tipo":"gasoso",
         "temp_media":-108,
         "temp_max":-100,
@@ -97,7 +97,7 @@
     {
         "id":6,
         "nome":"Saturno",
-        "img":"/img/saturno.png",
+        "img":"img/saturno.png",
         "tipo":"gasoso",
         "temp_media":-139,
         "temp_max":-100,
@@ -116,7 +116,7 @@
     {
         "id":7,
         "nome":"Urano",
-        "img":"/img/urano.png",
+        "img":"img/urano.png",
         "tipo":"gasoso",
         "temp_media":-205.2,
         "temp_max":-218.2,
@@ -135,7 +135,7 @@
     {
         "id":8,
         "nome":"Netuno",
-        "img":"/img/neptuno.png",
+        "img":"img/neptuno.png",
         "tipo":"gasoso",
         "temp_media":-221,
         "temp_max":-221,
