@@ -14,7 +14,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     color: white;
-    background-image: url("img/main-bg.jpg");
+    background-image: url("/img/main-bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
